@@ -6,13 +6,12 @@ import fs from "fs";
 import zlib from "zlib";
  
 
-const BUCKET_NAME = "td-ingest-storage-uat";
+const BUCKET_NAME = "buketname";
 
 // Create the parameters for the bucket
-//export const bucketParams = { Bucket: "td-ingest-storage-uat", Prefix: "mitigation-enabled-ingest-datastream2.latest.akamai-integration.uat.netacea.cloud/dataSources/fastly" };
 export const bucketParams = { 
     Bucket: BUCKET_NAME, 
-    Prefix: "mitigation-enabled-ingest-datastream2.latest.akamai-integration.uat.netacea.cloud/dataSources/fastly" };
+    Prefix: "bukcetfolder" };
 
 export const run = async () => {
   try {
